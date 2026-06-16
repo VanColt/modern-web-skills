@@ -21,6 +21,7 @@ npx skills add VanColt/modern-web-skills
 Install a specific skill:
 
 ```bash
+npx skills add VanColt/modern-web-skills --skill site-to-api
 npx skills add VanColt/modern-web-skills --skill scaffold-nextjs-16
 ```
 
@@ -28,7 +29,8 @@ npx skills add VanColt/modern-web-skills --skill scaffold-nextjs-16
 
 | Skill | When to use it | Install |
 |---|---|---|
-| [scaffold-nextjs-16](./skills/scaffold-nextjs-16/SKILL.md) | Scaffolding a new Next.js 16 project, working in an existing one, or upgrading from Next 15. Forces the agent to read the local `node_modules/next/dist/docs/` before writing code, and to use the v16 conventions (Turbopack by default, `proxy.ts` not `middleware.ts`, async params, `cacheComponents`, React 19.2). | `npx skills add VanColt/modern-web-skills --skill scaffold-nextjs-16` |
+| [site-to-api](./skills/site-to-api/SKILL.md) | You have a URL of a public website and want a structured API to read data from it. The skill turns the URL into a runnable Node.js + Express + Zod server with example requests and a drift alarm. | `npx skills add VanColt/modern-web-skills --skill site-to-api` |
+| [scaffold-nextjs-16](./skills/scaffold-nextjs-16/SKILL.md) | Scaffolding a new Next.js 16 project, working in an existing one, or upgrading from Next 15. Forces the agent to read the local `node_modules/next/dist/docs/` before writing code, and to use the v16 conventions. | `npx skills add VanColt/modern-web-skills --skill scaffold-nextjs-16` |
 
 ## Adding a new skill
 
