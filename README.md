@@ -1,26 +1,34 @@
-# skills
+# modern-web-skills
 
-A small collection of agent skills for `npx skills`. Tight, opinionated, copy-paste-runnable.
+> The skills I reach for at the beginning, middle, and end of a modern web project.
 
-[![skills.sh](https://skills.sh/b/VanColt/skills)](https://skills.sh/VanColt/skills)
+A small, personal collection of agent skills for `npx skills`. Tight, opinionated, copy-paste-runnable. Built and maintained by [VanColt](https://github.com/VanColt) — every skill here is one I use in real projects (this site's stack, agency work, and a handful of side projects), not synthesized from documentation.
+
+[![skills.sh](https://skills.sh/b/VanColt/modern-web-skills)](https://skills.sh/VanColt/modern-web-skills)
+
+## Why this exists
+
+I build modern web apps — Next.js, React 19, Tailwind 4, Vercel. Coding agents don't always have current information about the frameworks I use. They suggest `middleware.ts` (renamed to `proxy.ts` in Next 16), pass `--turbopack` to `next build` (the default now), and reach for `any` when they should reach for Zod.
+
+This repo is the set of skills that **fix the agent's defaults** to match the way I actually build. Each skill is small, opinionated, and tries to be the only thing you need for one specific moment of a project.
 
 ## Install
 
 ```bash
-npx skills add VanColt/skills
+npx skills add VanColt/modern-web-skills
 ```
 
-Install specific skills:
+Install a specific skill:
 
 ```bash
-npx skills add VanColt/skills --skill scaffold-nextjs-16
+npx skills add VanColt/modern-web-skills --skill scaffold-nextjs-16
 ```
 
 ## Skills
 
-| Skill | What it does | Install |
+| Skill | When to use it | Install |
 |---|---|---|
-| [scaffold-nextjs-16](./skills/scaffold-nextjs-16/SKILL.md) | Scaffold a new Next.js 16 project the right way, or work in an existing one. Forces the agent to read the local `node_modules/next/dist/docs/` before writing code, and to use v16 conventions (Turbopack by default, `proxy.ts` not `middleware.ts`, async params, `cacheComponents`, React 19.2). Also covers upgrading from Next 15. | `npx skills add VanColt/skills --skill scaffold-nextjs-16` |
+| [scaffold-nextjs-16](./skills/scaffold-nextjs-16/SKILL.md) | Scaffolding a new Next.js 16 project, working in an existing one, or upgrading from Next 15. Forces the agent to read the local `node_modules/next/dist/docs/` before writing code, and to use the v16 conventions (Turbopack by default, `proxy.ts` not `middleware.ts`, async params, `cacheComponents`, React 19.2). | `npx skills add VanColt/modern-web-skills --skill scaffold-nextjs-16` |
 
 ## Adding a new skill
 
@@ -29,6 +37,10 @@ npx skills init my-new-skill
 ```
 
 Drop the new `SKILL.md` into `./skills/<name>/`, update this README, and push.
+
+## About the author
+
+Hi, I'm Mert. I run a small web agency in Ankara and build with the modern web stack. I write skills for myself first; if they're useful to you too, that's a happy side effect.
 
 ## License
 
