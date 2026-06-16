@@ -40,7 +40,7 @@ Drop the new `SKILL.md` into `./skills/<name>/`, update this README, and push.
 
 ## About the author
 
-Hi, I'm Mert. I run a small web agency in Ankara and build with the modern web stack. I write skills for myself first; if they're useful to you too, that's a happy side effect.
+Hi, I'm Mert. I'm a tech enthusiast and early AI adopter, hooked since the GPT-3 days. I've decided to open up my skills library to the public to share some of what I've picked up building my own projects: everything from the simple things that just save me time, to the more advanced ones that have pulled me out of a dark place.
 
 ## License
 
